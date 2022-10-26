@@ -30,7 +30,7 @@ body {
 
 .content {padding: 0 300px}
 
-.skip-head {padding-top: 74px;}
+.skip-head {padding-top: 74px}
 
 /* <-------------------- Header start -----------------> */
 
@@ -215,7 +215,7 @@ body {
 .home-main {
     background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(../../../public/image/header/header-main/background.jpg);
     width: 100%;
-    height: 100vh;
+    min-height: 800px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -523,13 +523,11 @@ body {
 .cart-not__active {display: none}
 
 .hide-cart {
-    position: relative;
     color: #3F3737;
     width: 45%;
     height: 600px;
-    max-height: 600px;
     border-radius: 15px;
-    top: 16%;
+    top: calc(100% - (600px / 2 + 50%));
     left: 28%;
     margin: auto;
     background: #ffffff;
@@ -870,6 +868,7 @@ body {
 }
 
 @media (max-width: 768px) {
+    .skip-head {padding: 74px 0 40px}
     .form-input {width: 100%}
     .category {display: none;}
     #category {
@@ -897,7 +896,7 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
     }
-    .home-main__logo-block {margin-top: 140px}
+    .home-main__logo-block {margin: 140px}
     .info-blocks {flex-direction: column;}
     .about {margin-bottom: 50px; width: 276px}
     .order-pizza {width: 100%}
