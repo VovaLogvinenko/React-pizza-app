@@ -61,7 +61,7 @@ function CartItem( { info } ) {
     }
   }
   return (
-    <article className="cart-pizza">
+    <section className="cart-pizza">
       <img
         src="./image/menu-main/remove/remove.svg"
         alt="remove button"
@@ -89,7 +89,7 @@ function CartItem( { info } ) {
           </div>
         </div>
       </div>
-    </article>
+    </section>
   );
 }
 
